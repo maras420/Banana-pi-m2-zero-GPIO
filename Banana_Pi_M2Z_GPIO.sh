@@ -247,11 +247,11 @@ echo ''
 
 sleep 2s
 
-sed -i 's/BOARD=bpi-m3/BOARD=bpi-m2z/g' /var/lib/bananapi/board.sh
-sed -i 's/BOARD_AUTO=bpi-m3/BOARD_AUTO=bpi-m2z/g' /var/lib/bananapi/board.sh
-sed -i 's/#write_enable=YES/write_enable=YES/g' /etc/vsftpd.conf
-sed -i 's/#local_umask=022/local_umask=022/g' /etc/vsftpd.conf
-sed -i 's/#chroot_local_user=YES/chroot_local_user=YES/g' /etc/vsftpd.conf
+sudo sed -i 's/BOARD=bpi-m3/BOARD=bpi-m2z/g' /var/lib/bananapi/board.sh
+sudo sed -i 's/BOARD_AUTO=bpi-m3/BOARD_AUTO=bpi-m2z/g' /var/lib/bananapi/board.sh
+sudo sed -i 's/#write_enable=YES/write_enable=YES/g' /etc/vsftpd.conf
+sudo sed -i 's/#local_umask=022/local_umask=022/g' /etc/vsftpd.conf
+sudo sed -i 's/#chroot_local_user=YES/chroot_local_user=YES/g' /etc/vsftpd.conf
 echo 'allow_writeable_chroot=YES' | sudo tee -a /etc/vsftpd.conf
 echo 'pasv_enable=Yes' | sudo  tee -a /etc/vsftpd.conf
 echo 'pasv_min_port=40000' | sudo tee -a /etc/vsftpd.conf
