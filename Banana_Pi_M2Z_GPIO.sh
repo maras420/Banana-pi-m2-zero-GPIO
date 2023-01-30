@@ -30,16 +30,16 @@ sudo apt-get install -y software-properties-common
 
 sleep 2s
 
-sudo add-apt-repository -y universe
-sudo add-apt-repository -y multiverse
-sudo add-apt-repository -y restricted
+#sudo add-apt-repository -y universe
+#sudo add-apt-repository -y multiverse
+#sudo add-apt-repository -y restricted
 
-sleep 2s
+#sleep 2s
 
-sudo apt-get -y update
-sudo apt-get -y upgrade
+#sudo apt-get -y update
+#sudo apt-get -y upgrade
 
-sleep 2s
+#sleep 2s
 
 echo ''
 
@@ -130,10 +130,12 @@ git clone https://github.com/TuryRx/Bananapi-m2-zero-GPIO-files.git
 git clone https://github.com/adafruit/Adafruit_Python_GPIO.git
 ##git clone https://github.com/BPI-SINOVOIP/BPI-WiringPi2.git
 git clone https://github.com/bontango/BPI-WiringPi2.git
-git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
+##git clone https://github.com/LeMaker/RPi.GPIO_BP -b bananapi
+git clone https://github.com/maras420/RPi.GPIO_BP.git -b wip-bpi-m2z
 git clone https://github.com/codelectron/ssd1306.git
 ##git clone https://github.com/BPI-SINOVOIP/RPi.GPIO.git //Old library
-git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+##git clone https://github.com/GrazerComputerClub/RPi.GPIO.git
+git clone https://github.com/maras420/RPi.GPIO.git -b wip-bpi-m2z
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.examples.rar /home/$directory
 sudo unrar x /home/$directory/Banana-pi-m2-zero-GPIO/luma.oled.rar /home/$directory
 
