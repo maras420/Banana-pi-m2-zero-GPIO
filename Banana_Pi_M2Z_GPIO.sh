@@ -60,7 +60,6 @@ vsftpd \
 python3-pil \
 python3-setuptools \
 libfreetype6-dev \
-libjpeg8-dev \
 libsdl1.2-dev \
 libsdl-dev \
 libportmidi-dev \
@@ -68,7 +67,6 @@ libsdl-ttf2.0-dev \
 libsdl-mixer1.2-dev \
 libsdl-image1.2-dev \
 libjpeg-dev \
-python-dev \
 lm-sensors \
 unrar \
 libgpiod2 \
@@ -89,8 +87,8 @@ echo ''
 
 sleep 2s
 
-sudo pip install setuptools==58.3.0
-sudo pip install wheel==0.37.0
+sudo pip3 install setuptools==58.3.0
+sudo pip3 install wheel==0.37.0
 sudo pip3 install pyserial==3.5
 sudo pip3 install pyusb==1.2.1
 sudo pip3 install pyftdi==0.54.0
